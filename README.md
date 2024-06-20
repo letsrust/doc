@@ -7,17 +7,32 @@ Rust Document is a collection of documents that help you learn Rust programming 
 
 ## Resource
 
+- [Rust语言圣经(Rust Course)](https://course.rs/about-book.html) - 强烈推荐，如果只看一本书的话，就看这本
+
+- https://rustwiki.org/
+
 - [Rust 编程第一课](https://time.geekbang.org/column/intro/100085301) 
+
 - [Rust 语言从入门到实战](https://time.geekbang.org/column/intro/100626901)
+
 - [Learn Rust by Example](https://rustwiki.org/zh-CN/rust-by-example/index.html)  
+  
   - English Version: [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html) - [Get started with Rust](https://www.rust-lang.org/learn)  
+
 - [The Rust Standard Library](https://doc.rust-lang.org/std/index.html)  
+
 - [The Rust Reference](https://doc.rust-lang.org/beta/reference/introduction.html)  
+
 - [The Rust Programming Language](https://doc.rust-lang.org/book/) - [chinese version](https://kaisery.github.io/trpl-zh-cn/)  
+
 - [The Rustonomicon](https://doc.rust-lang.org/nomicon/) - Rust 的核心原理  
+
 - [Rust RFCs - RFC Book](https://rust-lang.github.io/rfcs/introduction.html)  
+
 - [This Week in Rust](https://this-week-in-rust.org/)  
+
 - https://readrust.net/  
+
 - https://github.com/google/comprehensive-rust
 
 Book
