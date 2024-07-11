@@ -1,4 +1,4 @@
-# Rust Camp Week1
+# Rust Camp
 
 ## Introduction
 
@@ -8,7 +8,7 @@
 - 范型和 trait
   - impl Trait v.s. &dyn Trait
 - 错误处理
-  - `Option<T>`, `Result<T,E>` 
+  - `Option<T>`, `Result<T,E>`
   - anyhow, thiserror
 
 ## Lirary
@@ -36,3 +36,7 @@
 - http file server
 
 单元测试和重构
+
+## Rust Ecosystem
+
+- Error handling: std error, ?, anyhow, thiserror

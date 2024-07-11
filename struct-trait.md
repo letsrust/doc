@@ -1,5 +1,9 @@
 # Struct & Trait
 
+[The Common Rust Traits - Rustifications](https://stevedonovan.github.io/rustifications/2018/09/08/common-rust-traits.html) 
+
+
+
 ## Trait
 
 - trait 是一种约束

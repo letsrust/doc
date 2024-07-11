@@ -21,13 +21,13 @@
 ### 错误的分类
 
 - 不可恢复错误
-  
+
   - 有些错误，我们碰到了后需要及早退出程序，或者直接不启动程序，而是打出错误信息。
-  
+
   - Rust 提供的支持：panic!, todo!, unimplemented!, unreachable!
 
 - 可恢复错误
-  
+
   - 在遇到后，不应该让整个程序直接停止运行，而是在代码逻辑中分析可能的错误原因，要么尝试恢复性的处理方案，要么给用户返回自定义的错误信息，让用户明白任务未达到预期的原因。
 
 ## Rust 里的错误处理
@@ -64,15 +64,15 @@ fut
 ### 常用操作
 
 - `Option<T>`
-  
+
   - 解包：unwrap, expect, unwrap_or_default
-  
+
   - map, cloned, is_some, is_none, as_ref, as_mut, take, replace, and_then
 
-- `Result<T, E>` 
-  
+- `Result<T, E>`
+
   - 解包：unwrap, expect, unwrap_or_default
-  
+
   - map, is_ok, is_err, as_ref, as_mut, and_then, map_err
 
 - Option.ok_or -> Reuslt
@@ -90,7 +90,7 @@ pub trait Error: Debug + Display {
 }
 ```
 
-`Result<T, E>` 里 E 是一个代表错误的数据类型，并没有做任何的规范和限制，为了规范这个错误的类型和行为，Rust 定义了 Error trait，试图让错误处理更加优雅、让大型的工程实践更加易用。
+`Result<T, E>`  里 E 是一个代表错误的数据类型，并没有做任何的规范和限制，为了规范这个错误的类型和行为，Rust 定义了 Error trait，试图让错误处理更加优雅、让大型的工程实践更加易用。
 
 一般做法：我们定义自己的错误类型体系，并为每个错误类型实现 Error trait，可想而知这会带来很多的模版代码，并且代码量也会非常大；但是这类工作已经有人做了，`anyhow` 和 `thiserror` 这两个 crate 就提供了。
 
@@ -131,16 +131,16 @@ std, anyhow 和 thiserror 一起构成了 Rust 语言错误处理的最佳实践
 
 ## Reference
 
-- [08｜Option&lt;T&gt;与Result&lt;T, E&gt;、迭代器-Rust 语言从入门到实战-极客时间](https://time.geekbang.org/column/article/722702)
+- [08 ｜ Option&lt;T&gt;与 Result&lt;T, E&gt;、迭代器-Rust 语言从入门到实战-极客时间](https://time.geekbang.org/column/article/722702)
 
-- [18｜错误处理系统：错误的构建、传递和处理-Rust 语言从入门到实战-极客时间](https://time.geekbang.org/column/article/729009)
+- [18 ｜错误处理系统：错误的构建、传递和处理-Rust 语言从入门到实战-极客时间](https://time.geekbang.org/column/article/729009)
 
-- [18｜错误处理：为什么Rust的错误处理与众不同？-陈天 · Rust 编程第一课-极客时间](https://time.geekbang.org/column/article/424002)
+- [18 ｜错误处理：为什么 Rust 的错误处理与众不同？-陈天 · Rust 编程第一课-极客时间](https://time.geekbang.org/column/article/424002)
 
 - [anyhow - Rust](https://docs.rs/anyhow/latest/anyhow/index.html)
 
 - [thiserror - Rust](https://docs.rs/thiserror/latest/thiserror/)
 
-- [蚂蚁集团 CeresDB 团队 | 关于 Rust 错误处理的思考 - Rust精选](https://rustmagazine.github.io/rust_magazine_2021/chapter_2/rust_error_handle.html)
+- [蚂蚁集团 CeresDB 团队 | 关于 Rust 错误处理的思考 - Rust 精选](https://rustmagazine.github.io/rust_magazine_2021/chapter_2/rust_error_handle.html)
 
 - [anyhow 和 thiserror - 错误处理库](https://rustcc.cn/article?id=6dcbf032-0483-4980-8bfe-c64a7dfb33c7)
